@@ -17,6 +17,6 @@
 	<hr>
 	<img src="./img/고양이.jpg">
 	
-	<a 
+	<a href="http://www.naver.com">Go NAVER</a>
 </body>
 </html>
