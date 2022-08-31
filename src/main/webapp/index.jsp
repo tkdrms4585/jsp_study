@@ -60,22 +60,25 @@
 		</div>
 	</header>
 
-	<section>
-		<br class="bg-black" id="profile">
-		<div class="row justify-content-center bg-black text-whiht">
+	<!-- Profile-->
+	<section class="bg-black">
+		<br id="profile"> <br>
+		<h2 class="text-white text-center mb-4">
+			개인정보
+			</h3>
+			<div class="row justify-content-center bg-black text-whiht">
 
-			<div class="col-2" style="width:60%">
-				<img class="img-fluid" src="assets/img/profile.jpg" alt="..."/>
-			</div>
-			<div class="col-2 text-white" style="width:40%">
-				<p>성별 : 남</p>
-				<p>나이 : 28세</p>
-				<p>생년월일 : 1995년 2월 20일</p>
-				<p>가족관계 : 부모님, 남동생 2명</p>
-				
-			</div>
-		</div>
+				<div class="col-2" style="width: 60%">
+					<img class="img-fluid" src="assets/img/profile.jpg" alt="..." />
+				</div>
+				<div class="col-2 text-white" style="width: 40%">
+					<p>성별 : 남</p>
+					<p>나이 : 28세</p>
+					<p>생년월일 : 1995년 2월 20일</p>
+					<p>가족관계 : 부모님, 남동생 2명</p>
 
+				</div>
+			</div>
 	</section>
 
 
@@ -98,12 +101,14 @@
 
 	</section>
 	<br>
-	<!-- Profile-->
+
 
 
 	<br>
 	<!-- Projects-->
 	<section id="projects">
+		<br>
+		<h2 class="text-black text-center mb-4">성격은 이래요!</h2>
 		<div class="container px-4 px-lg-5">
 
 
@@ -115,8 +120,7 @@
 						<div class="d-flex h-100">
 							<div class="project-text w-100 my-auto text-center text-lg-left">
 								<img class="img-fluid" src="assets/img/집.png"
-									style="width: 100px;" /> <br>
-								<br>
+									style="width: 100px;" /> <br> <br>
 								<h4 class="text-black">극한의 집돌이</h4>
 								<p class="mb-0 text-balck">
 									집에 있는 것이 좋아요!. <br> 근데 한번 나가면 집을 안 들어가요...ㅎ
@@ -131,8 +135,7 @@
 						<div class="d-flex h-100">
 							<div class="project-text w-100 my-auto text-center text-lg-left">
 								<img class="img-fluid" src="assets/img/전구.png"
-									style="width: 100px;" /> <br>
-								<br>
+									style="width: 100px;" /> <br> <br>
 								<h4 class="text-white">아이디어 뱅크</h4>
 								<p class="text-white">
 									새로운 아이디어!? 짜릿해! 너무 좋아! <br> 머리로 생각한 것을 표현하기 너무 힘들어요...
@@ -151,8 +154,7 @@
 						<div class="d-flex h-100">
 							<div class="project-text w-100 my-auto text-center text-lg-right">
 								<img class="img-fluid" src="assets/img/계획.png"
-									style="width: 100px;" /> <br>
-								<br>
+									style="width: 100px;" /> <br> <br>
 								<h4 class="text-black">무 계획이 계획이다!</h4>
 								<p class="mb-0 text-black">
 									여행?! 일단 출발~! <br> 일이 터지면 그때가서 생각하자~
@@ -169,8 +171,7 @@
 						<div class="d-flex h-100">
 							<div class="project-text w-100 my-auto text-center text-lg-right">
 								<img class="img-fluid" src="assets/img/물음표.png"
-									style="width: 100px;" /> <br>
-								<br>
+									style="width: 100px;" /> <br> <br>
 								<h4 class="text-white">물음표 살인마</h4>
 								<p class="text-white">
 									왜 그렇게 되는거죠?! <br> 그냥 단순히 궁금한거에요...
@@ -182,10 +183,11 @@
 					</div>
 				</div>
 			</div>
-			<br>
-			<br>
+			<br> <br>
 			<!-- Featured Project Row-->
 			<div class="row gx-0 mb-4 mb-lg-5 align-items-center" id="signup">
+				<br>
+				<h2 class="text-black text-center mb-4">하고 싶은 것</h2>
 				<div class="col-xl-8 col-lg-7">
 					<img class="img-fluid mb-3 mb-lg-0" src="assets/img/공수.jpg"
 						alt="..." style="width: 90%;" />
@@ -201,7 +203,11 @@
 			</div>
 		</div>
 	</section>
-
+	<br>
+	
+	
+	
+	<br>
 	<!-- Contact-->
 	<section class="contact-section bg-black">
 		<div class="container px-4 px-lg-5">
@@ -247,6 +253,8 @@
 			</div>
 		</div>
 	</section>
+	
+	
 	<!-- Footer-->
 	<footer class="footer bg-black small text-center text-white-50">
 		<div class="container px-4 px-lg-5">Copyright &copy; Inseong
