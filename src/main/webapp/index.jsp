@@ -76,11 +76,9 @@
 					<p>나이 : 28세</p>
 					<p>생년월일 : 1995년 2월 20일</p>
 					<p>가족관계 : 부모님, 남동생 2명</p>
-
 				</div>
 			</div>
 	</section>
-
 
 
 	<!-- About-->
@@ -204,10 +202,10 @@
 		</div>
 	</section>
 	<br>
-	
-	
-	
 	<br>
+	
+	
+	
 	<!-- Contact-->
 	<section class="contact-section bg-black">
 		<div class="container px-4 px-lg-5">
@@ -255,10 +253,10 @@
 	</section>
 	
 	
-	<!-- Footer-->
+	<!-- Footer 최하단 카피라이터-->
 	<footer class="footer bg-black small text-center text-white-50">
-		<div class="container px-4 px-lg-5">Copyright &copy; Inseong
-			Website 2022</div>
+		<div class="container px-4 px-lg-5">Copyright &copy; Inseong Website 2022</div>
+		
 	</footer>
 	<!-- Bootstrap core JS-->
 	<script
