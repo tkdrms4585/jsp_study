@@ -1,0 +1,60 @@
+-- 데이터베이스 삭제
+DROP DATABASE reg_wis34;
+
+-- 데이터베이스 생성
+CREATE DATABASE reg_wis34;
+USE reg_wis34;
+
+-- 테이블 생성
+CREATE TABLE  cv_reg_wis34(
+	num INT NOT NULL AUTO_INCREMENT,
+	date TIMESTAMP DEFAULT NOW(),
+	time TIMESTAMP DEFAULT NOW(),
+	name VARCHAR(30) NOT NULL,
+	phone VARCHAR(30) NOT NULL,
+	agree_info VARCHAR(10) NOT NULL,
+	fever VARCHAR(10) NOT NULL,
+	PRIMARY KEY (num)
+);
+
+-- 기본 계정 생성
+INSERT INTO cv_reg_wis34(name, phone, agree_info, fever)
+VALUES('김정수', '01012341234', 'O', 'X');
+INSERT INTO cv_reg_wis34(name, phone, agree_info, fever)
+VALUES('노태권', '01012341234', 'O', 'X');
+INSERT INTO cv_reg_wis34(name, phone, agree_info, fever)
+VALUES('왕인성', '01012341234', 'O', 'X');
+INSERT INTO cv_reg_wis34(name, phone, agree_info, fever)
+VALUES('송성혁', '01012341234', 'O', 'X');
+INSERT INTO cv_reg_wis34(name, phone, agree_info, fever)
+VALUES('조규태', '01012341234', 'O', 'X');
+INSERT INTO cv_reg_wis34(name, phone, agree_info, fever)
+VALUES('곽유진', '01012341234', 'O', 'X');
+
+-- 쿼리 조회
+select * from cv_reg_wis34;
+select * from mem_reg_wis34;
+
+-- 수정
+UPDATE cv_reg_wis34 SET name = '수정1', phone = '수정2', agree_info = '수정3', fever = '수정4' WHERE num = 원하는 번호
+
+-- 삭제
+DELETE FROM cv_reg_wis34 WHERE num = 원하는 번호
+DROP TABLE mem_reg_wis34;
+
+-- 회원 테이블
+CREATE TABLE  mem_reg_wis34(
+	usernum INT NOT NULL AUTO_INCREMENT,
+	userID VARCHAR(30) NOT NULL UNIQUE KEY,
+	userPW VARCHAR(30) NOT NULL,
+	userName VARCHAR(30) NOT NULL,
+	userPhone VARCHAR(30) NOT NULL,
+	PRIMARY KEY (usernum)
+);
+-- 회원 추가
+INSERT INTO mem_reg_wis34(userID, userPW, userName, userPhone)
+VALUES('test01', '123', '왕인성', '01012341234');
+INSERT INTO mem_reg_wis34(userID, userPW, userName, userPhone)
+VALUES('test02', '123', '김정수', '01012341234');
+INSERT INTO mem_reg_wis34(userID, userPW, userName, userPhone)
+VALUES('test03', '123', '홍길동', '01012341234');

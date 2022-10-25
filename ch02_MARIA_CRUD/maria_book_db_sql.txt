@@ -1,0 +1,136 @@
+* 기존 DB 삭제
+DROP DATABASE book_db;
+DROP TABLE members;
+
+* 새로운 테이블 생성
+CREATE DATABASE book_db;
+
+* 사용할 db 선택
+USE book_db;
+
+* 테이블 생성
+CREATE TABLE books(
+	book_id INT NOT NULL AUTO_INCREMENT,
+	title VARCHAR(50),
+	publisher VARCHAR(30),
+	year VARCHAR(10),
+	price INT,
+	PRIMARY KEY ( book_id)
+);
+
+ - 회원번호(PK)
+ - 회원명(NN)
+ - 아이디(UK, NN)
+ - 패스워드(NN)
+ - 이메일(UK)
+ - 휴대폰
+ - 주민등록번호(UK, NN)
+CREATE TABLE members(
+	user_num INT NOT NULL AUTO_INCREMENT, 
+	user_name VARCHAR(30) NOT NULL,
+	user_id VARCHAR(16) NOT NULL UNIQUE,
+	user_passwd VARCHAR(30) NOT NULL,
+	user_email VARCHAR(50) UNIQUE, 
+	user_phone VARCHAR(13),
+	user_RRN VARCHAR(13) UNIQUE NOT NULL,
+	user_class int default 100 not null,
+	PRIMARY KEY (user_num)
+);
+
+--------------------------------
+
+* 추가 예시
+INSERT INTO members (name, user_id, passwd, email, phone, reg_num) 
+	VALUES('왕인성', '인성굿굿', '1234', '인성@네이버', 01072748535, 9502201234567);
+
+INSERT INTO books (title, publisher, year, price) 
+	VALUES('hello world!?', 'first book', '2019년', 19800);
+
+* 추가 교재 예시
+INSERT INTO books (title, publisher, year, price) 
+	VALUES('Operating System Concepts', 'Wiley', '2003', 30700);
+INSERT INTO books (title, publisher, year, price) 
+	VALUES('Head Frist PHP and MYSQL', 'OReilly', '2009', 58000);
+INSERT INTO books (title, publisher, year, price) 
+	VALUES('C Programming Language', 'Prentice-Hall', '1989', 35000);
+INSERT INTO books (title, publisher, year, price) 
+	VALUES('Head First SQL', 'OReilly', '2007', 43000);
+INSERT INTO books (title, publisher, year, price) 
+	VALUES('Prefect JSP 웹프로그래밍', '인피니티북스', '2010', 30000);
+INSERT INTO books (title, publisher, year, price) 
+	VALUES('C로 배우는 알고리즘', '영진출판', '2015', 20000);
+INSERT INTO books (title, publisher, year, price) 
+	VALUES('CentOS', '영진출판', '2019', 40000);
+INSERT INTO books (title, publisher, year, price) 
+	VALUES('JAVA는 처음이지', '출판컴', '2021', 25000);
+INSERT INTO books (title, publisher, year, price) 
+	VALUES('빅데이터와 머신러닝', 'AI출판', '2022', 50000);
+INSERT INTO books (title, publisher, year, price) 
+	VALUES('컴파일러 입문', '성안당', '1998', 15000);
+
+* 회원 추가
+INSERT INTO members (name, user_id, passwd, email, phone, reg_num) 
+	VALUES('왕인성', '굿퍼스널리티', '1234', '인성@naver.com', '01072748535', '9502201111111');
+INSERT INTO members (name, user_id, passwd, email, phone, reg_num) 
+	VALUES('노태권', '노tothe태tothe권', '1234', '태권@naver.com', '01072654321', '0010263255567');
+INSERT INTO members (name, user_id, passwd, email, phone, reg_num) 
+	VALUES('곽유진', '하기시러팁', '1234', '유진@naver.com', '01077676535', '0011114234467');
+INSERT INTO members (name, user_id, passwd, email, phone, reg_num) 
+	VALUES('김정수', '갑자기', '1234', '정수@naver.com', '01079875353', '9901141238867');
+INSERT INTO members (name, user_id, passwd, email, phone, reg_num) 
+	VALUES('조규태', '조개탕', '1234', '규태@naver.com', '01073543635', '9902201234467');
+INSERT INTO members (name, user_id, passwd, email, phone, reg_num) 
+	VALUES('송성혁', '과제가너무어렵', '1234', '성혁@naver.com', '01011111111', '9802201222567');
+INSERT INTO members (name, user_id, passwd, email, phone, reg_num) 
+	VALUES('김다현', '다람쥐', '1234', '다현@naver.com', '01012345678', '9806292222222');
+INSERT INTO members (name, user_id, passwd, email, phone, reg_num) 
+	VALUES('박진석', '진돌맨', '1234', '진석@naver.com', '01012441212', '9902061234567');
+INSERT INTO members (name, user_id, passwd, email, phone, reg_num) 
+	VALUES('박종훈', 'v종훈v', '1234', '종훈@naver.com', '01087654321', '0010113234567');
+INSERT INTO members (name, user_id, passwd, email, phone, reg_num) 
+	VALUES('유다연', '교촌치킨', '1234', '다연@naver.com', '01023248535', '0004034211567');
+--------------------------------
+
+* 검색_ 번호 정렬
+SELECT * FROM books ORDER BY book_id';
+
+* 검색_ 책 제목
+SELECT * FROM books WHERE title LIKE 'Head First%';
+
+* 검색_ 가격
+SELECT * FROM books WHERE price > 30000 and price < 50000';
+
+* 검색_ 년도 기준 정렬
+SELECT * FROM books ORDER BY year';
+
+
+* 검색_ 범위 지정
+SELECT * FROM books ORDER BY book_id limit 시작번호, 끝번호;
+
+--------------------------------
+
+* 수정_ id 지정 내용 수정
+UPDATE books SET title = '수정1', publisher = '수정2', year = '수정3', price = 수정4 WHERE book_id = 원하는 번호
+
+* 수정_ 19--년도 책 가격 30000
+UPDATE books SET price = 30000 WHERE year LIKE '19%'
+
+--------------------------------
+
+* 삭제_ id 지정
+DELETE FROM books WHERE book_id = 원하는번호;
+
+* 삭제_ 19--년도 책 삭제
+DELETE FROM books WHERE year LIKE '19%';
+
+--------------------------------
+
+* 서브쿼리를 활용한 연속 추가
+* 현재 db에 있는 book id 만큼 값 수정
+INSERT INTO books(book_id, title, publisher, year, price)
+SELECT book_id + 320, title, publisher, year, price +10
+FROM books;
+
+--------------------------------
+
+* 
