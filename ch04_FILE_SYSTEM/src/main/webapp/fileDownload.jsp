@@ -85,9 +85,8 @@
 		}
 		%>
 		</tbody>
-		
-		<br>
-		<p><a href="index.jsp">홈으로 돌아가기</a></p>
 	</table>
+	<br>
+	<p><a href="index.jsp">홈으로 돌아가기</a></p>
 </body>
 </html>

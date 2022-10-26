@@ -1,0 +1,18 @@
+-- DB 삭제
+drop database wis34_mall_db;
+
+-- DB 생성
+create database wis34_mall_db;
+
+-- DB 접근
+use wis34_mall_db;
+
+-- image_테이블 생성
+create table image_tbl (
+  i_id int primary key auto_increment,
+  i_file_name varchar(30) not null,
+  i_original_name varchar(30) not null,
+  i_thumbnail_name varchar(30) not null,
+  i_file_type varchar(30) not null,
+  i_file_size int
+);
