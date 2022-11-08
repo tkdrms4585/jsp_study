@@ -5,13 +5,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>마이쇼핑몰(wis34) - 맥주자료입력(C)</title>
+<title>마이쇼핑몰(wis34) - 맥주자료입력(C2) v0.3</title>
 </head>
 <body>
-<h1>마이쇼핑몰(wis34) - 맥주자료입력(C)</h1>
+<h1>마이쇼핑몰(wis34) - 맥주자료입력(C2) v0.3</h1>
 <hr>
 <h2>b_id값은 DB에서 결정(auto increment) </h2>
-<form method="post" action="<%=beerContDir%>/BeerController.jsp">
+<h2>맥주 코드 자동 생성 </h2>
+<h2>b_id값은 DB에서 결정(auto increment) </h2>
+<form method="post" action="./BeerController.be">
 <br>맥주코드: <input type="text" name="b_code" size="30">
 <br>맥주종류: <input type="text" name="b_category" size="30">
 <br>맥주이름: <input type="text" name="b_name" size="30">

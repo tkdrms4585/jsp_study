@@ -1,4 +1,4 @@
-<%@page import="wis34_mvc_beer2.model.beer.BeerDTO"%>
+<%@page import="wis34_mvc_beer3.model.beer.BeerDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="/globalData.jsp" %>
@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>마이쇼핑몰(wis34) - 맥주자료입력(U2)</title>
+<title>마이쇼핑몰(wis34) - 맥주자료입력(U2) </title>
 </head>
 <body>
 <h1>마이쇼핑몰(wis34) - 맥주자료입력(U2)</h1>
@@ -16,7 +16,7 @@
 %>
 
 <h2>b_id 값은 DB에서 결정(auto increment)</h2>
-   <form method="post" action="<%=beerContDir%>/BeerController.jsp">
+   <form method="post" action="./BeerController.be">
       <br>맥주번호(수정불가) : <input type="text" name="b_id" value="<%=beer.getB_id() %>" size="30" readonly>
       <br>맥주코드 : <input type="text" name="b_code"  value="<%=beer.getB_code() %>"  size="30">
       <br>맥주종류 : <input type="text" name="b_category" value="<%=beer.getB_category() %>"  size="30">

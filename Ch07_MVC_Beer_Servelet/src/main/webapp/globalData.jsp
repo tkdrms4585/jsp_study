@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%!
-	static final String rootDir = "/wis34_mvc_beer2";
+	static final String rootDir = "/wis34_mvc_beer3";
 	static final String workDir = rootDir + "/com/yju/2wda/team4";
 	
 	static final String modelDir = workDir + "/model";

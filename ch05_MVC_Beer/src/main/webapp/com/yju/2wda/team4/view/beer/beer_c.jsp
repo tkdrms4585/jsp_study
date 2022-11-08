@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>마이쇼핑몰(JHJ14) - 맥주자료입력(C)</title>
+<title>마이쇼핑몰(wis34) - 맥주자료입력(C)</title>
 </head>
 <body>
-<h1>마이쇼핑몰(JHJ14) - 맥주자료입력(C)</h1>
+<h1>마이쇼핑몰(wis34) - 맥주자료입력(C)</h1>
 <hr>
 <h2>b_id값은 DB에서 결정(auto increment) </h2>
 <form method="post" action="<%=beerContDir%>/BeerController.jsp">

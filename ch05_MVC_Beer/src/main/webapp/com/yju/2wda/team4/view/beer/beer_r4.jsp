@@ -8,10 +8,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>>마이쇼핑몰(PJH22) - 맥주자료조회(R_4)</title>
+<title>>마이쇼핑몰(wis34) - 맥주자료조회(R_4)</title>
 </head>
 <body>
-   <h1>마이쇼핑몰(PJH22) - 맥주자료조회(R_4)</h1>
+   <h1>마이쇼핑몰(wis34) - 맥주자료조회(R_4)</h1>
    <hr>
  <%
    BeerDTO beer;

@@ -8,10 +8,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>마이쇼핑몰(PJH22) - 맥주자료수정(U)</title>
+<title>마이쇼핑몰(wis34) - 맥주자료수정(U)</title>
 </head>
 <body>
-   <h1>마이쇼핑몰(PJH22) - 맥주자료수정(U)</h1>
+   <h1>마이쇼핑몰(wis34) - 맥주자료수정(U)</h1>
    <hr>
    <h2>전체보기(부분조회, 페이징기능 미포함)</h2>
    <%

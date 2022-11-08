@@ -6,10 +6,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>마이쇼핑몰(PJH22) - 맥주자료입력(U2)</title>
+<title>마이쇼핑몰(wis34) - 맥주자료입력(U2)</title>
 </head>
 <body>
-<h1>마이쇼핑몰(PJH22) - 맥주자료입력(U2)</h1>
+<h1>마이쇼핑몰(wis34) - 맥주자료입력(U2)</h1>
 <hr>
 <%
    BeerDTO beer=(BeerDTO)request.getAttribute("beer"); 

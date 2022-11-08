@@ -10,10 +10,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>마이쇼핑몰(JHJ14) - 맥주자료조회(R)</title>
+<title>마이쇼핑몰(wis34) - 맥주자료조회(R)</title>
 </head>
 <body>
-	<h1>마이쇼핑몰(JHJ14) - 맥주자료조회(R)</h1>
+	<h1>마이쇼핑몰(wis34) - 맥주자료조회(R)</h1>
 	<hr>
 	<h2>전체보기(부분조회, 페이징기능 미포함)</h2>
 	<%

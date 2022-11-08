@@ -1,17 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*" %>
-<%@ page import="wis34_mvc_beer.model.beer.*" %>
+<%@ page import="wis34_mvc_beer3.model.beer.*" %>
 <%@ page import="java.util.*" %>
 <%@ include file="/globalData.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>마이쇼핑몰(wis34) - 맥주자료삭제(D)</title>
+<title>마이쇼핑몰(wis34) - 맥주자료삭제(D) v0.3</title>
 </head>
 <body>
-<h1>마이쇼핑몰(wis34) - 맥주자료삭제(D)</h1>
+<h1>마이쇼핑몰(wis34) - 맥주자료삭제(D) v0.3</h1>
 <hr>
 <%
 	BeerDTO beer;
@@ -62,7 +62,7 @@
 			<td><%=beer.getB_like()%></td>
 			<td><%=beer.getB_dislike()%></td>
 			<td><%=beer.getB_image()%></td>
-			<td><a href="<%= beerContDir %>/BeerController.jsp?actionType=D_ID&b_id=<%=beer.getB_id()%>">DELETE</a></td>
+			<td><a href="./BeerController.be?actionType=D_ID&b_id=<%=beer.getB_id()%>">DELETE</a></td>
 		</tr>
 <%
 	}
@@ -70,11 +70,11 @@
 		</tbody>
 	</table>
 	
-<a href="<%= beerContDir %>/BeerController.jsp?actionType=D&currentPageNo=0">[FIRST]</a>
+<a href="./BeerController.be?actionType=D&currentPageNo=0">[FIRST]</a>
 <%
 	if (currentPageNo > 0) {
 %>
-	<a href="<%= beerContDir %>/BeerController.jsp?actionType=D&currentPageNo=<%=(currentPageNo-1)%>">[PRE]</a>
+	<a href="./BeerController.be?actionType=D&currentPageNo=<%=(currentPageNo-1)%>">[PRE]</a>
 <%
 	}else{
 %>
@@ -90,7 +90,7 @@
 <%
 		}else{
 %>
-			<a href="<%= beerContDir %>/BeerController.jsp?actionType=D&currentPageNo=<%=i%>">[<%=(i+1)%>]</a>
+			<a href="./BeerController.be?actionType=D&currentPageNo=<%=i%>">[<%=(i+1)%>]</a>
 <%
 		}
 	}
@@ -98,7 +98,7 @@
 <%
 	if(currentPageNo < bpiVO.getPageCnt() - 1) {
 %>
-	<a href="<%= beerContDir %>/BeerController.jsp?actionType=D&currentPageNo=<%=(currentPageNo+1)%>">[NXT]</a>
+	<a href="./BeerController.be?actionType=D&currentPageNo=<%=(currentPageNo+1)%>">[NXT]</a>
 <%
 	}else{
 %>
@@ -106,7 +106,7 @@
 <%
 	}
 %>
-<a href="<%= beerContDir %>/BeerController.jsp?actionType=D&currentPageNo=<%=(bpiVO.getPageCnt()-1)%>">[END]</a>
+<a href="./BeerController.be?actionType=D&currentPageNo=<%=(bpiVO.getPageCnt()-1)%>">[END]</a>
 
 <br><a href="<%=rootDir %>/index.jsp">홈으로 돌아가기</a>
 </body>

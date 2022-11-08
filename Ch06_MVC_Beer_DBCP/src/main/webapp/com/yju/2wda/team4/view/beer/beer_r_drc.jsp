@@ -1,17 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*"%>
-<%@ page import="wis34_mvc_beer.model.beer.*" %>
+<%@ page import="wis34_mvc_beer2.model.beer.*" %>
 <%@ page import="java.util.*"%>
 <%@ include file="/globalData.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>>마이쇼핑몰(JHJ14) - 맥주자료조회 레코드 카운트 설정(R_DRC)</title>
+<title>>마이쇼핑몰(wis34) - 맥주자료조회 레코드 카운트 설정(R_DRC)</title>
 </head>
 <body>
-	<h1>마이쇼핑몰(JHJ14) - 맥주자료조회 레코드 카운트 설정(R_DRC)</h1>
+	<h1>마이쇼핑몰(wis34) - 맥주자료조회 레코드 카운트 설정(R_DRC)</h1>
 	<hr>
 	<%
 	BeerPageInfoVO bpiVO;

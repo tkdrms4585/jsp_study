@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="/globalData.jsp" %>
-<%@ page import="wis34_mvc_beer2.model.beer.*" %>
+<%@ page import="wis34_mvc_beer3.model.beer.*" %>
 <%@ page import="java.util.*" %>
 <!DOCTYPE html>
 <html>

@@ -8,19 +8,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>마이 쇼핑몰(wis34) ver0.2 DBCP</h1>
+<h1>마이 쇼핑몰(wis34) ver0.3 Servelet</h1>
 <hr>
 <h2>맥주샵 시스템 - CRUD with MVC</h2>
-<h2>MVC 패턴 적용, DAO, DTO, VO활용, DBCP/서블릿/스프링 미적용</h2>
+<h2>MVC 패턴 적용, DAO, DTO, VO활용</h2>
+<h2>DBCP/서블릿 적용 스프링 미적용</h2>
 <h3>JNDI, DBCP 구성 및 활용</h3>
 
 <ul>
 	<li><a href="<%=beerViewDir %>/beer_r_drc.jsp">출력레코드갯수조정(R_DRC)</a>
 	<li><a href="<%=beerViewDir %>/beer_c.jsp">맥주정보입력(C)</a>
-	<li><a href="<%=beerContDir %>/BeerController.jsp?actionType=R">맥주정보조회(R, 페이징기능X)</a>
-	<li><a href="<%=beerContDir %>/BeerController.jsp?actionType=R4">맥주정보조회(R4, MVC패턴적용)</a>
-	<li><a href="<%=beerContDir %>/BeerController.jsp?actionType=U">맥주정보수정(U, MVC패턴적용)</a>
-	<li><a href="<%=beerContDir %>/BeerController.jsp?actionType=D">맥주정보삭제(D, MVC패턴적용)</a>
+	<li><a href="./BeerController.be?actionType=R">맥주정보조회(R, 페이징기능X)</a>
+	<li><a href="./BeerController.be?actionType=R4">맥주정보조회(R4, MVC패턴적용)</a>
+	<li><a href="./BeerController.be?actionType=U">맥주정보수정(U, MVC패턴적용)</a>
+	<li><a href="./BeerController.be?actionType=D">맥주정보삭제(D, MVC패턴적용)</a>
 </ul>
 
 <p>
