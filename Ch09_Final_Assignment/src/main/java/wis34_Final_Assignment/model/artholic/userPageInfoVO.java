@@ -1,6 +1,6 @@
-package wis34_mvc_beer4.model.beer;
+package wis34_Final_Assignment.model.artholic;
 
-public class BeerPageInfoVO {
+public class userPageInfoVO {
 
 	private int limitCnt;
 	
@@ -13,7 +13,7 @@ public class BeerPageInfoVO {
 	private int startPageNo;
 	private int endPageNo;
 	
-	public BeerPageInfoVO() {
+	public userPageInfoVO() {
 		super();
 		
 		this.recordCnt = 0;

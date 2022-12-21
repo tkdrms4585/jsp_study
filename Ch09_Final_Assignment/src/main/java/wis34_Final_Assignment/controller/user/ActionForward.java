@@ -1,4 +1,4 @@
-package wis34_mvc_beer4.controller.beer;
+package wis34_Final_Assignment.controller.user;
 
 public class ActionForward {
 	private boolean isRedirect = false;

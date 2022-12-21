@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ include file="/globalData.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>OOPS... v0.4</h1>
-<br><h2>오류 발생. 관리자에게 문의하세요.</h2>
-<br>
-<br><a href="<%=rootDir %>">홈으로 돌아가기</a>
+<h1>카테고리 배경</h1>
 </body>
 </html>

@@ -1,0 +1,23 @@
+-- DB 생성
+create database art_holic;
+
+-- DB 접근
+use art_holic;
+
+-- user 테이블 삭제
+drop table user;
+
+-- user_테이블 생성
+create table user (
+  id varchar(20) not null unique,
+  password varchar(20) not null,
+  name varchar(6) not null,
+  age int(3) not null,
+  email varchar(30) not null,
+  grade int(3) not null default 100
+);
+
+-- 작품 등록 게시판
+create table product (
+  
+);
