@@ -9,6 +9,7 @@ drop table user;
 
 -- user_테이블 생성
 create table user (
+  num int primary key auto_increment,
   id varchar(20) not null unique,
   password varchar(20) not null,
   name varchar(6) not null,
@@ -17,7 +18,15 @@ create table user (
   grade int(3) not null default 100
 );
 
+
+
 -- 작품 등록 게시판
 create table product (
-  
+  num int primary key auto_increment,
+  id varchar(20) not null,
+  state varchar(10) not null,
+  category varchar(10) not null,
+  title varchar(50) not null,
+  content varchar(200) not null,
+  FOREIGN KEY (`id`) REFERENCES `user` (`id`)
 );

@@ -30,12 +30,16 @@ public class LoginAction implements Action {
 		userDTO result = dao.login(dto);
 		
 		if(result.getName() != null) { // 로그인 성공
-			세션=result 
+			session.setAttribute("loginInfo", dto);
+			forward.setPath("/wis34_Final_Assignment");
+			forward.setRedirect(true);
 		} else { // 실패
-			
+			session.setAttribute("alert", "로그인에 실패했습니다.");
+			forward.setPath("/wis34_Final_Assignment");
+			forward.setRedirect(true);
 		}
 		
-		return null;
+		return forward;
 	}
 	
 	

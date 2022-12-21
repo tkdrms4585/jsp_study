@@ -7,6 +7,8 @@ import javax.servlet.http.*;
 import java.util.*;
 import wis34_Final_Assignment.controller.user.*;
 import wis34_Final_Assignment.controller.user.action.DefaultErrorAction;
+import wis34_Final_Assignment.controller.user.action.LoginAction;
+import wis34_Final_Assignment.controller.user.action.LogoutAction;
 import wis34_Final_Assignment.model.artholic.*;
 
 public class userController extends HttpServlet implements Servlet {
@@ -24,7 +26,11 @@ public class userController extends HttpServlet implements Servlet {
 		case "/login.be" :
 			action = new LoginAction();
 			break;
-
+		
+		case "/logout.be" :
+			action = new LogoutAction();
+			break;
+			
 		default:
 			action = new DefaultErrorAction();
 			break;
